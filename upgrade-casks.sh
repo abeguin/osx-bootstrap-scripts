@@ -29,7 +29,7 @@ for package in \
     intellij-idea \
     google-drive
 do \
-    (echo "upgrading $package" && brew upgrade $package && echo "$package installed")
+    (echo "upgrading $package" && brew upgrade --cask $package && echo "$package installed")
 done
 
 echo

@@ -76,7 +76,8 @@ for package in \
     tfenv \ 
     virtualenv \
     python \
-    autojump
+    autojump \
+    gitmoji
 do \
     (brew list "$package" >/dev/null 2>&1 && echo "$package already installed") || \
     (echo "installing $package" && brew install $package && echo "$package installed")
@@ -112,7 +113,7 @@ sh -c "$(ln -s ~/.oh-my-zsh/custom/themes/spaceship-prompt/spaceship.zsh-theme ~
 (echo "installing plugin Tarrasch/zsh-autoenv" && sh -c "$(git clone https://github.com/Tarrasch/zsh-autoenv.git ~/.oh-my-zsh/custom/plugins/autoenv --depth=1)")
 
 # Copy configuration file 
-cp .zshrc.local ~/.
+cp .zshrc.local ~/.zshrc
 
 # Add zsh to trusted shells list
 (grep -q "/bin/zsh" /etc/shells && echo "ZSH is already a trusted shell") || \

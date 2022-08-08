@@ -174,7 +174,7 @@ NOTES_HOME="$HOME/SynologyDrive/Notes"
 
 [[ -d "$NOTES_HOME" ]] || (echo "Creating $NOTES_HOME folder for zsh-notes plugin" && mkdir -p "$NOTES_HOME")
 
-zstyle :notes home '$NOTES_HOME'
+zstyle :notes home $NOTES_HOME
 zstyle ':notes:widget' once no
 zstyle ':notes:widget:preview' enabled yes
 zstyle ':notes:widget' picker fzf

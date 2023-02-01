@@ -27,7 +27,8 @@ for package in \
     synology-drive \
     visual-studio-code \
     intellij-idea \
-    google-drive
+    google-drive \
+    homebrew/cask-fonts/font-fira-code
 do \
     (echo "upgrading $package" && brew upgrade --cask $package && echo "$package installed")
 done

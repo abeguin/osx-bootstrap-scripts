@@ -3,7 +3,7 @@
 set -Eeuo pipefail
 
 ([[ -f $(brew --prefix)/bin/brew ]] && echo "Homebrew already present") || \
-(echo "installing Homebrew" && /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)")
+(echo "installing Homebrew" && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)")
 
 echo
 
@@ -35,7 +35,6 @@ for package in \
     zsh \
     packer \
     watch \
-    font-fira-code \
     transmission-cli \
     docker-completion \
     k9s \

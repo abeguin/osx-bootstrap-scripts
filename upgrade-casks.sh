@@ -24,10 +24,11 @@ for package in \
     vlc \
     xmind \
     rambox \
-    synology-drive \
     visual-studio-code \
     intellij-idea \
     google-drive \
+    google-chrome \
+    slack \
     homebrew/cask-fonts/font-fira-code
 do \
     (echo "upgrading $package" && brew upgrade --cask $package && echo "$package installed")

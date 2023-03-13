@@ -27,10 +27,11 @@ for package in \
     vlc \
     xmind \
     rambox \
-    synology-drive \
     visual-studio-code \
     intellij-idea \
     google-drive \
+    google-chrome \
+    slack \
     homebrew/cask-fonts/font-fira-code
 do \
     (brew list "$package" --cask >/dev/null 2>&1 && echo "$package already installed") || \

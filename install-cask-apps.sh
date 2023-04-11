@@ -17,7 +17,6 @@ for package in \
     menumeters \
     postman \
     docker \
-    wireshark \
     discord \
     flutter \
     fork \

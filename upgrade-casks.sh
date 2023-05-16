@@ -13,7 +13,7 @@ for package in \
     keepassxc \
     menumeters \
     postman \
-    docker \
+    rancher-destkop \
     discord \
     flutter \
     fork \
@@ -28,7 +28,8 @@ for package in \
     google-drive \
     google-chrome \
     slack \
-    homebrew/cask-fonts/font-fira-code
+    homebrew/cask-fonts/font-fira-code \
+    bitwarden
 do \
     (echo "upgrading $package" && brew upgrade --cask $package && echo "$package installed")
 done

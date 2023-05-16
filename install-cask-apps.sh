@@ -16,7 +16,7 @@ for package in \
     keepassxc \
     menumeters \
     postman \
-    docker \
+    rancher-desktop \
     discord \
     flutter \
     fork \
@@ -31,7 +31,8 @@ for package in \
     google-drive \
     google-chrome \
     slack \
-    homebrew/cask-fonts/font-fira-code
+    homebrew/cask-fonts/font-fira-code \
+    bitwarden
 do \
     (brew list "$package" --cask >/dev/null 2>&1 && echo "$package already installed") || \
     (echo "installing $package" && brew install $package && echo "$package installed")

@@ -8,8 +8,11 @@ else
 fi
 
 PATH="/bin:/usr/bin:/usr/local/bin:$PATH"
+PATH="/usr/sbin:/usr/local/sbin:$PATH"
+PATH="/sbin:$PATH"
 PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
 PATH="$(brew --prefix)/sbin:$PATH"
+PATH="~/.rd/bin:$PATH"
 export PATH
 
 # Required for k9s skins

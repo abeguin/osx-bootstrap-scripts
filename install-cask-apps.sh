@@ -32,7 +32,8 @@ for package in \
     google-chrome \
     slack \
     homebrew/cask-fonts/font-fira-code \
-    bitwarden
+    bitwarden \
+    background-music
 do \
     (brew list "$package" --cask >/dev/null 2>&1 && echo "$package already installed") || \
     (echo "installing $package" && brew install $package && echo "$package installed")

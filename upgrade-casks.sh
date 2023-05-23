@@ -29,7 +29,8 @@ for package in \
     google-chrome \
     slack \
     homebrew/cask-fonts/font-fira-code \
-    bitwarden
+    bitwarden \
+    background-music
 do \
     (echo "upgrading $package" && brew upgrade --cask $package && echo "$package installed")
 done

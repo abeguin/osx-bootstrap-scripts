@@ -13,16 +13,14 @@ for package in \
     keepassxc \
     menumeters \
     postman \
-    rancher-destkop \
+    docker \
     discord \
     flutter \
     fork \
     nextcloud \
-    signal \
     spotify \
     vlc \
     xmind \
-    rambox \
     visual-studio-code \
     intellij-idea \
     google-drive \
@@ -30,7 +28,8 @@ for package in \
     slack \
     homebrew/cask-fonts/font-fira-code \
     bitwarden \
-    background-music
+    background-music \
+    beeper
 do \
     (echo "upgrading $package" && brew upgrade --cask $package && echo "$package installed")
 done

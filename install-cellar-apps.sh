@@ -50,7 +50,8 @@ for package in \
     pandoc \
     fq \
     bitwarden-cli \
-    htop
+    htop \
+    graphviz
 do \
     (brew list "$package" >/dev/null 2>&1 && echo "$package already installed") || \
     (echo "installing $package" && brew install $package && echo "$package installed")

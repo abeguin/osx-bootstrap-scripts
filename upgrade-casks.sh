@@ -29,7 +29,8 @@ for package in \
     homebrew/cask-fonts/font-fira-code \
     bitwarden \
     background-music \
-    beeper
+    beeper \
+    lastpass
 do \
     (echo "upgrading $package" && brew upgrade --cask $package && echo "$package installed")
 done

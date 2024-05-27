@@ -13,12 +13,11 @@ for package in \
     keepassxc \
     menumeters \
     postman \
-    docker \
+    rancher-desktop \
     discord \
     flutter \
     fork \
     nextcloud \
-    spotify \
     vlc \
     xmind \
     visual-studio-code \

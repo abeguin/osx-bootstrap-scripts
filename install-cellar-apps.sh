@@ -51,7 +51,9 @@ for package in \
     fq \
     bitwarden-cli \
     htop \
-    graphviz
+    graphviz \
+    openjdk \
+    openjdk@17
 do \
     (brew list "$package" >/dev/null 2>&1 && echo "$package already installed") || \
     (echo "installing $package" && brew install $package && echo "$package installed")

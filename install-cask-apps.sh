@@ -21,7 +21,6 @@ for package in \
     flutter \
     fork \
     nextcloud \
-    spotify \
     vlc \
     xmind \
     visual-studio-code \

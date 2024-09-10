@@ -13,7 +13,7 @@ for package in \
     keepassxc \
     menumeters \
     postman \
-    rancher-desktop \
+    rancher \
     discord \
     flutter \
     fork \

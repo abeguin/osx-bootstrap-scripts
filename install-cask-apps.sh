@@ -10,16 +10,15 @@ echo
 echo "installing packages from Cask"
 for package in \
     firefox \
+    arc \
     google-cloud-sdk \
     iterm2 \
     jumpcut \
     keepassxc \
     menumeters \
-    postman \
+    bruno \
     rancher \
-    discord \
     flutter \
-    fork \
     nextcloud \
     vlc \
     xmind \
@@ -27,12 +26,9 @@ for package in \
     intellij-idea \
     google-drive \
     google-chrome \
-    slack \
     homebrew/cask-fonts/font-fira-code \
     bitwarden \
-    background-music \
-    beeper \
-    lastpass
+    background-music
 do \
     (brew list "$package" --cask >/dev/null 2>&1 && echo "$package already installed") || \
     (echo "installing $package" && brew install $package && echo "$package installed")

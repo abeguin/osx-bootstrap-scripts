@@ -7,6 +7,8 @@ set -Eeuo pipefail
 
 echo
 
+brew tap tofuutils/tap
+
 echo "installing packages from Cellar"
 for package in \
     ansible \
@@ -15,7 +17,6 @@ for package in \
     bash-completion \
     coreutils \
     curl \
-    docker \
     fzf \
     gnu-sed \
     golang \
@@ -33,7 +34,6 @@ for package in \
     wireshark \
     wireguard-go \
     zsh \
-    packer \
     watch \
     transmission-cli \
     docker-completion \
@@ -41,19 +41,18 @@ for package in \
     nvm \
     jenv \
     tfenv \
+    tofuenv \
     virtualenv \
     python \
     autojump \
     gitmoji \
-    arp-scan \ 
-    maven \
+    arp-scan \
     pandoc \
     fq \
     bitwarden-cli \
     htop \
     graphviz \
-    openjdk \
-    openjdk@17
+    task
 do \
     (brew list "$package" >/dev/null 2>&1 && echo "$package already installed") || \
     (echo "installing $package" && brew install $package && echo "$package installed")

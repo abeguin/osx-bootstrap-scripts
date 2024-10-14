@@ -19,7 +19,6 @@ for package in \
     nextcloud \
     vlc \
     xmind \
-    visual-studio-code \
     intellij-idea \
     google-drive \
     google-chrome \

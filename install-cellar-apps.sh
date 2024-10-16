@@ -53,7 +53,8 @@ for package in \
     htop \
     graphviz \
     task \
-    helix
+    helix \
+    oven-sh/bun/bun
 do \
     (brew list "$package" >/dev/null 2>&1 && echo "$package already installed") || \
     (echo "installing $package" && brew install $package && echo "$package installed")

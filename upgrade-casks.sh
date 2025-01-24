@@ -21,7 +21,6 @@ for package in \
     xmind \
     intellij-idea \
     google-drive \
-    google-chrome \
     font-fira-code \
     bitwarden \
     background-music
